@@ -18,9 +18,9 @@ export default function Viewer() {
     socketRef.current = io(import.meta.env.VITE_APP_SERVER, {
       transports: ["websocket"],
     });
-    console.log(import.meta.env.VITE_APP_PEER)
+    console.log(import.meta.env.VITE_APP_SERVER)
     peerRef.current = new Peer(undefined, {
-      host: import.meta.env.VITE_APP_PEER,
+      host: 'something-tso2ioqj.b4a.run',
     });
 
     const peerClient = peerRef.current;
