@@ -21,7 +21,7 @@ export default function Broadcaster() {
     });
 
     peerClientRef.current = new Peer(undefined, {
-      host: import.meta.env.VITE_APP_PEER,
+      host: 'something-tso2ioqj.b4a.run',
     });
 
     const peerClient = peerClientRef.current;
