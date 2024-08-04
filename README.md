@@ -19,7 +19,7 @@ This project is a live streaming server built using Node.js for the backend and 
 - [Backend on Render](https://live-streaming-server.onrender.com)
 - [Peer.js Server on Back4App](https://something-tso2ioqj.b4a.run/)
 - [Prometheus](https://peer-gtq5.onrender.com)
-- [Grafana](https://graf-h4dxeosz.b4a.run/)
+- [Grafana](https://peer-1.onrender.com/d/PTSqcpJWk/streming-hub-monitoring?orgId=1)
 - Database on MongoDB Cluster
 
 ## Prerequisites
@@ -82,7 +82,7 @@ cd Live_Streming_Server
     - Access Prometheus at [Prometheus URL](https://peer-gtq5.onrender.com).
 
 2. Grafana:
-    - Access Grafana at [Grafana URL](https://graf-h4dxeosz.b4a.run/).
+    - Access Grafana at [Grafana URL](https://peer-1.onrender.com/d/PTSqcpJWk/streming-hub-monitoring?orgId=1).
 
 ## Usage
 - Visit the frontend URL to start and stop streaming.
