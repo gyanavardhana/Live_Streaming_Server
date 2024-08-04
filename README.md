@@ -17,10 +17,10 @@ This project is a live streaming server built using Node.js for the backend and 
 ## Deployed Links
 - [Frontend on Vercel](https://live-streaming-server-eight.vercel.app/)
 - [Backend on Render](https://live-streaming-server.onrender.com)
-- [Database on MongoDB Cluster]
 - [Peer.js Server on Back4App](https://something-tso2ioqj.b4a.run/)
 - [Prometheus](https://peer-gtq5.onrender.com)
 - [Grafana](https://graf-h4dxeosz.b4a.run/)
+- Database on MongoDB Cluster
 
 ## Prerequisites
 - Node.js
@@ -86,8 +86,19 @@ cd Live_Streming_Server
 
 ## Usage
 - Visit the frontend URL to start and stop streaming.
-- Use the chat feature to interact during the stream.
+  ![image](https://github.com/user-attachments/assets/bce231cb-de10-4b78-a90d-89caa89ea3da)
+- To Stream , we have to be authenticated so login with "admin@email.com" and "admin".
+  ![image](https://github.com/user-attachments/assets/3435bfcb-d96c-494e-94ec-3de1ea18514b)
+- After the logging in you will be redirected to the Home page and now click on "Start Streaming".
+  ![image](https://github.com/user-attachments/assets/25ec9318-3d3c-4248-a3fe-1b1871ca84ef)
+- Now You can open a new tab or in a new device ,open the homepage and click on "View Stream".
+  ![image](https://github.com/user-attachments/assets/29b26243-08c1-4713-9fc5-b7747087d074)
+- Use the chat feature to interact during the stream in various devices.
+  ![image](https://github.com/user-attachments/assets/a90ee6ba-1386-4ce8-bdf9-4324f48ad5df)
+  ![WhatsApp Image 2024-08-04 at 15 37 15_afe052e7](https://github.com/user-attachments/assets/95219d02-49a7-4d81-a680-f52f84104c77)
 - Monitor performance and logs using Prometheus and Grafana.
+  ![image](https://github.com/user-attachments/assets/a716e707-58b1-40e4-a99e-008cd3471aac)
+  ![image](https://github.com/user-attachments/assets/7ad1418f-0aca-4d88-8b2a-267b75251828)
 
 ## API Endpoints
 ### Authentication
@@ -103,25 +114,6 @@ cd Live_Streming_Server
 - **Monitoring**: Prometheus, Grafana
 - **Deployment**: Vercel, Render, Back4App
 
-## Screenshots
-### Demo
-![Demo Screenshot 1](path/to/screenshot1.png)
-![Demo Screenshot 2](path/to/screenshot2.png)
-
-### Technologies Used
-![Node.js](path/to/nodejs-logo.png)
-![React.js](path/to/reactjs-logo.png)
-![Docker](path/to/docker-logo.png)
-![Prometheus](path/to/prometheus-logo.png)
-![Grafana](path/to/grafana-logo.png)
-![Peer.js](path/to/peerjs-logo.png)
 
 ## Contributing
 Feel free to submit issues or pull requests.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to replace the placeholder paths for the images with the actual paths to your screenshots and logos.
