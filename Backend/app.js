@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: '*,
+    origin: '*',
     methods: ["GET", "POST"]
   }
 });
@@ -22,7 +22,7 @@ const port = 3000;
 
 // Middleware
 app.use(cors({
-  origin: '*,
+  origin: '*',
 }));
 
 app.use(bodyParser.json());
