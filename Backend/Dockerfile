@@ -16,11 +16,6 @@ COPY . .
 # Expose the port on which your backend application runs
 EXPOSE 3000
 
-ENV CLIENT_URL=$CLIENT_URL
-ENV MONGO_URI=$MONGO_URI
-ENV JWT_SECRET=$JWT_SECRET
-ENV NODE_ENV=$NODE_ENV
-
 
 # Command to start the development server
 CMD ["npm", "run", "start"]
