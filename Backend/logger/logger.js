@@ -11,5 +11,5 @@ if (process.env.NODE_ENV === "dev") {
 if (process.env.NODE_ENV === "prod") {
     logger = prodLogger()
 }
-
+logger = devLogger();
 module.exports = logger;
