@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Peer from "peerjs";
 import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
+import { useNavigate } from "react-router-dom";
 
 export default function Broadcaster() {
   const videoRef = useRef(null);
@@ -12,6 +13,7 @@ export default function Broadcaster() {
   const [stream, setStream] = useState(null);
   const [isVideoEnabled, setIsVideoEnabled] = useState(true);
   const [isAudioEnabled, setIsAudioEnabled] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     socketRef.current = io(import.meta.env.VITE_APP_SERVER, {
@@ -102,6 +104,12 @@ export default function Broadcaster() {
       <nav className="bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg shadow-md p-4 flex justify-between items-center">
         <h1 className="text-3xl font-extrabold text-indigo-600">StreamHub</h1>
         <div className="flex items-center space-x-4">
+          <button
+            onClick={() => navigate("/")}
+            className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            Home
+          </button>
           <button
             className={`px-4 py-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105 ${
               isVideoEnabled

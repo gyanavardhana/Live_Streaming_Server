@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Peer from "peerjs";
 import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
+import { useNavigate } from "react-router-dom";
 
 export default function Viewer() {
   const [viewerCount, setViewerCount] = useState(0);
@@ -11,6 +12,7 @@ export default function Viewer() {
   const messageListRef = useRef(null);
   const socketRef = useRef(null);
   const peerRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     socketRef.current = io(import.meta.env.VITE_APP_SERVER, {
@@ -116,6 +118,12 @@ export default function Viewer() {
           <span className="text-indigo-800 font-semibold">
             Viewers: {viewerCount}
           </span>
+          <button
+            onClick={() => navigate("/")}
+            className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            Home
+          </button>
           <button
             onClick={handleToggleSound}
             className={`px-4 py-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105 ${
