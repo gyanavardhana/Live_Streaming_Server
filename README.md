@@ -16,7 +16,7 @@ This project is a live streaming server built using Node.js for the backend and 
 
 ## Deployed Links
 - [Frontend on Vercel](https://live-streaming-server-eight.vercel.app/)
-- [Backend on Render](https://live-streaming-server.onrender.com)
+- [Backend on Render](https://live-streaming-server.onrender.com/metrics)
 - [Peer.js Server on Back4App](https://something-tso2ioqj.b4a.run/)
 - [Prometheus](https://peer-gtq5.onrender.com)
 - [Grafana](https://peer-1.onrender.com/d/PTSqcpJWk/streming-hub-monitoring?orgId=1)
