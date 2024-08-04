@@ -27,7 +27,9 @@ app.use(cors({
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+if (!logger) {
+  console.error('Logger is not initialized. Please check the configuration.');
+}
 // Routes
 // Prometheus metrics
 const promRegistry = new promClient.Registry();
